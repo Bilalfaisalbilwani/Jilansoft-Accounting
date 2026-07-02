@@ -295,10 +295,6 @@ export default function Settings() {
               <span>Business Profile Settings</span>
             </h3>
 
-            {/* Note that Business Name and Logo are locked by system administrator */}
-            <div className="bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl p-3 text-xs text-zinc-500 leading-relaxed">
-              <span className="font-bold text-zinc-700 dark:text-zinc-300">Organization Identity locked:</span> This system is hardcoded to <span className="font-bold text-indigo-600 dark:text-indigo-400">Jilansoft Accounting (JS)</span>. The name and branding can only be configured directly through the codebase.
-            </div>
 
             {/* Currency Name & Symbol */}
             <div className="grid grid-cols-2 gap-4">
