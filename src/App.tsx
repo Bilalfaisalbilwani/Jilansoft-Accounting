@@ -151,7 +151,7 @@ function AppContent() {
       <header className="md:hidden bg-white dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-850 px-4 py-3.5 flex items-center justify-between shrink-0 sticky top-0 z-30">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-black text-white text-sm">
-            {businessName.slice(0, 2).toUpperCase()}
+            {settings.businessLogo || 'JS'}
           </div>
           <span className="font-extrabold text-sm tracking-tight text-zinc-900 dark:text-zinc-100">{businessName}</span>
         </div>
@@ -175,7 +175,7 @@ function AppContent() {
         <div className="p-5 border-b border-zinc-250/60 dark:border-zinc-850/60 flex items-center justify-between gap-3 shrink-0">
           <div className="flex items-center gap-3 overflow-hidden">
             <div className="w-9 h-9 rounded-xl bg-indigo-600 text-white font-extrabold flex items-center justify-center shrink-0 shadow-md">
-              {businessName.slice(0, 2).toUpperCase()}
+              {settings.businessLogo || 'JS'}
             </div>
             <div className="truncate">
               <h2 className="font-black text-sm text-zinc-900 dark:text-zinc-50 tracking-tight leading-none truncate">{businessName}</h2>

@@ -20,8 +20,8 @@ interface BusinessContextType {
 }
 
 const defaultSettings: BusinessSettings = {
-  businessName: 'SwiftBooks Trading',
-  businessLogo: '',
+  businessName: 'Jilansoft Accounting',
+  businessLogo: 'JS',
   currency: 'USD',
   currencySymbol: '$',
   dateFormat: 'YYYY-MM-DD',
@@ -51,7 +51,9 @@ export function BusinessProvider({ children }: { children: React.ReactNode }) {
 
         const mergedSettings = {
           ...defaultSettings,
-          ...settingsMap
+          ...settingsMap,
+          businessName: 'Jilansoft Accounting',
+          businessLogo: 'JS'
         };
 
         setSettings(mergedSettings);

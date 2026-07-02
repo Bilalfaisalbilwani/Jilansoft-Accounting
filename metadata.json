@@ -1,5 +1,5 @@
 {
-  "name": "Offline Ledger",
+  "name": "Jilansoft Accounting",
   "description": "A professional, fully offline-first accounting and business management dashboard powered by IndexedDB.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

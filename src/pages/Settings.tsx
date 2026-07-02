@@ -46,7 +46,6 @@ export default function Settings() {
   const handleSaveProfile = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      await updateSetting('businessName', businessName.trim());
       await updateSetting('currency', currency);
       await updateSetting('currencySymbol', currencySymbol);
       await updateSetting('dateFormat', dateFormat);
@@ -296,16 +295,9 @@ export default function Settings() {
               <span>Business Profile Settings</span>
             </h3>
 
-            {/* Business Name */}
-            <div className="space-y-1.5">
-              <label className="text-xs font-semibold text-zinc-500 uppercase">Registered Company Name</label>
-              <input
-                type="text"
-                required
-                value={businessName}
-                onChange={(e) => setBusinessName(e.target.value)}
-                className="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl px-3 py-2 text-sm text-zinc-900 dark:text-zinc-100 focus:outline-none"
-              />
+            {/* Note that Business Name and Logo are locked by system administrator */}
+            <div className="bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-xl p-3 text-xs text-zinc-500 leading-relaxed">
+              <span className="font-bold text-zinc-700 dark:text-zinc-300">Organization Identity locked:</span> This system is hardcoded to <span className="font-bold text-indigo-600 dark:text-indigo-400">Jilansoft Accounting (JS)</span>. The name and branding can only be configured directly through the codebase.
             </div>
 
             {/* Currency Name & Symbol */}

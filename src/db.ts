@@ -190,8 +190,8 @@ export async function seedInitialData() {
 
   // 1. Settings only - no dummy records
   await db.settings.bulkAdd([
-    { key: 'businessName', value: 'SwiftBooks Trading' },
-    { key: 'businessLogo', value: '' },
+    { key: 'businessName', value: 'Jilansoft Accounting' },
+    { key: 'businessLogo', value: 'JS' },
     { key: 'currency', value: 'USD' },
     { key: 'currencySymbol', value: '$' },
     { key: 'dateFormat', value: 'YYYY-MM-DD' },
